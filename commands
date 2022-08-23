@@ -1,0 +1,54 @@
+Commands:
+1. git config --global user.email beatrizdev@gmail.com
+Used to set configuration values. You can change the email by username, file format, etc.
+
+2. git init
+Create new repository in GIT.
+
+3. git add
+Add files to index.
+
+4. git commit
+commit changes to the master branch.
+
+5. git status
+Displays changes that have not yet been added.
+
+6. git push
+pushes the changes made to the master branch of the remote repository associated with the working directory. For example: git push origin master
+
+7. git checkout
+Can be used to create branches or switch between them. For example, the following creates a new branch and switches to it: command git checkout -b <branch-name>
+To simply switch from one branch to another, use:
+git checkout <branch-name>
+
+8. git remote
+The git remote command allows a user to connect to a remote repository. The following command lists the currently configured remote repositories:
+git remote -v
+This command allows the user to connect to a remote server:
+git remote add origin <93.188.160.58>
+
+9. git branch
+The git branch command can be used to list, create or delete branches. To list all branches present in the repository, use:
+git branch - To delete a branch: git branch –d <branch-name
+
+10. git pull
+It receives updates from the remote repository (git fetch) and immediately applies the latest changes to its local workspace (git merge).
+
+11. git clone
+ From there, you clone code from a repository to your machine and then start working on it.
+
+12. git merge
+After programming on a branch, you have to merge it with others to actually push the changes. Just put the name of the branch we want to merge with the main branch after the merge term.
+
+13. git revert
+Allows you to undo a commit and recover a healthy version, either locally or remotely. To use it, you must first run a “git log -- oneline” to get the hash number. With the hash, then, you can type: “git revert 'hash#'”.
+
+14. git rm
+git rm is a very useful command to remove files from git and stop monitoring them, that is, associating them with the repository.
+
+15. git stash
+It serves to create a stack of changes that will be sent later to the repository.
+
+16. git reset
+Resetting is another way to get your system back to the last healthy state, an alternative to revert. It works like this: “git reset --hard HEAD~1”.
